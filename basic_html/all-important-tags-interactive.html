@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Important HTML Tags - Interactive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    section {
+      background: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      border-left: 5px solid #3498db;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #2c3e50;
+      text-decoration: underline;
+    }
+
+    img {
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    tr:hover {
+      background-color: #f2f2f2;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      padding: 8px;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"],
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+      background-color: #2c3e50;
+    }
+
+    .code-box {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 12px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      border-radius: 5px;
+      margin-top: 10px;
+      overflow-x: auto;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      input, button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 All Important HTML Tags (Interactive)</h1>
+
+  <section>
+    <h2>📄 Basic Structure</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>  &lt;head&gt;<br>    &lt;title&gt;Page&lt;/title&gt;<br>  &lt;/head&gt;<br>  &lt;body&gt;<br>    &lt;h1&gt;Hello!&lt;/h1&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;
+    </div>
+  </section>
+
+  <section>
+    <h2>📝 Headings & Paragraph</h2>
+    <h3>Heading Example</h3>
+    <p>This is a <b>bold</b>, <i>italic</i>, <u>underlined</u> text. <mark>Highlighted!</mark></p>
+  </section>
+
+  <section>
+    <h2>🔗 Links & Images</h2>
+    <p><a href="https://google.com" target="_blank">Open Google in new tab</a></p>
+    <img src="https://via.placeholder.com/150" alt="Sample image" width="150">
+  </section>
+
+  <section>
+    <h2>📋 Lists</h2>
+    <ol>
+      <li>Ordered Item 1</li>
+      <li>Ordered Item 2</li>
+    </ol>
+    <ul>
+      <li>Unordered A</li>
+      <li>Unordered B</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Table</h2>
+    <table>
+      <tr><th>Name</th><th>Age</th></tr>
+      <tr><td>Aaditya</td><td>20</td></tr>
+      <tr><td>John</td><td>22</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>📨 Forms & Inputs</h2>
+    <form>
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name"><br>
+      <label>Your Email</label>
+      <input type="email" placeholder="Enter your email"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section>
+    <h2>🎚️ Select, Radio, Checkbox</h2>
+    <input type="radio" name="gender"> Male<br>
+    <input type="radio" name="gender"> Female<br><br>
+    <input type="checkbox"> I agree to terms<br><br>
+    <label>Choose language:</label>
+    <select>
+      <option>HTML</option>
+      <option>CSS</option>
+    </select>
+  </section>
+
+  <section>
+    <h2>🎵 Audio & 🎥 Video</h2>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mp3">
+    </audio><br><br>
+    <video controls width="300">
+      <source src="sample.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section>
+    <h2>📎 Misc Tags</h2>
+    <p>Use <code>&lt;br&gt;</code> for line break and <code>&lt;hr&gt;</code> for horizontal rule</p>
+    <hr>
+    <div><strong>&lt;div&gt;</strong> is a block, <span><strong>&lt;span&gt;</strong> is inline</span></div>
+  </section>
+
+  <section>
+    <h2>🧠 Semantic Elements</h2>
+    <header><b>Header</b></header>
+    <nav>Navigation Links</nav>
+    <main>Main content here</main>
+    <article>Article block</article>
+    <section>Section block</section>
+    <aside>Sidebar</aside>
+    <footer>Footer info</footer>
+  </section>
+
+</body>
+</html>

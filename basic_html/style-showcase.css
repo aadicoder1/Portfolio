@@ -1,0 +1,172 @@
+/* =============================
+   🔷 BASIC RESET & BASE STYLES
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* =============================
+   🎨 BACKGROUND STYLES
+============================= */
+.bg-primary {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* =============================
+   🟦 BORDER RADIUS EXAMPLES
+============================= */
+.rounded-sm {
+  border-radius: 4px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* =============================
+   🧮 BOX SHADOWS
+============================= */
+.shadow-sm {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.shadow-md {
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+}
+
+.shadow-lg {
+  box-shadow: 8px 8px 24px rgba(0,0,0,0.2);
+}
+
+/* =============================
+   🖱️ HOVER BUTTON STYLES
+============================= */
+.button {
+  padding: 10px 20px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.button:hover {
+  background: #2980b9;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 10px #3498db, 0 0 20px #3498db;
+}
+
+.button-zoom:hover {
+  transform: scale(1.1);
+}
+
+.button-slide:hover {
+  transform: translateX(5px);
+}
+
+.button-shadow:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================
+   🧾 CARD DESIGN
+============================= */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+
+/* =============================
+   🔤 TEXT COLORS & DECORATION
+============================= */
+.text-primary { color: #3498db; }
+.text-danger { color: #e74c3c; }
+.text-success { color: #27ae60; }
+.text-muted  { color: #888; }
+
+.underline { text-decoration: underline; }
+.italic    { font-style: italic; }
+.bold      { font-weight: bold; }
+
+/* =============================
+   🧭 SCROLLBAR STYLES
+============================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+/* =============================
+   🔁 TRANSITIONS & ANIMATIONS
+============================= */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 1s ease-out forwards;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
