@@ -1,0 +1,81 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #4756da;
+  color: #333;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+header {
+  background: #181818;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.badges span {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 0.9rem;
+}
