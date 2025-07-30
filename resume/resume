@@ -1,0 +1,316 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+\begin{center}
+    {\huge XYZ NAME} \\ \vspace{2pt} 
+    {+91 XXXXXXXXX } ~ 
+    \small{-}
+    \small{-}
+    \href{}{\color{blue}{xxxxxxxxxxxx@gmail.com}} ~ 
+    \small{-}
+    \href{}{ \color{blue}{linkedin}}  ~
+    \small{-}
+    \href{}{ \color{blue}{github}} ~
+    \small{-}
+    \href{}{ \color{blue}{Leetcode}} ~
+    \vspace{-7pt}
+\end{center}
+
+\section{\color{airforceblue}SUMMARY}    
+        \vspace{0.5pt}
+        {\normalsize{Aspiring software developer with a strong foundation in OOPs, Data Structures, Algorithms, Operating Systems, and REST API development. Seeking to leverage skills in Node.js, React.js, and Javascript to build scalable, impactful software solutions.}
+        \vspace{-5pt}
+        
+
+        
+
+        % copy and paste above resumeItem block to add more 
+   
+ \vspace{0pt}
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {xyz college}{city, India}
+      {Bachelor of Technology - Computer Science; CGPA X.X}{2022 - 2026}
+    \vspace{-4pt}
+     \resumeSubheading
+      {XYZ school}{India}
+      {12th; Aggregate XX}{2021 - 2022}
+      \vspace{-4pt}
+     \resumeSubheading
+      {XYZ school}{India}
+      {10th; Aggregate XX}{2019 - 2020}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{ XXXXX, XXXXX}} \\
+      \vspace{1.2pt}
+      
+      \textbf{\normalsize{Tools and Platforms:}}{ \normalsize{XXXXX, XXXXX}} \\
+      \vspace{1.2pt}
+
+      \textbf{\normalsize{Libraries and Databases:}}{ \normalsize{XXXXX, XXXXX}} \\
+      
+     \textbf{\normalsize{Technologies and Frameworks:}}{ \normalsize{XXXXX, XXXXX, XXXXX}} \\
+     \vspace{1.2pt}
+     \textbf{\normalsize{Additional Skills:}}{ \normalsize{XXXXX, XXXXX, XXXXX }} \\
+     \vspace{1.2pt}
+
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}PROJECTS}
+  \resumeSubHeadingListStart
+
+    
+
+   \resumeSubheading
+  {CloudBurst Prediction System \href{https://github.com/yourgithub/cloud-burst-app}{\color{blue}{Link}}}{} 
+  {Tech Stack: Python, Flask, Machine Learning, Sklearn, HTML/CSS}{}
+  \resumeItemListStart
+    \resumeItem{\normalsize{Built a Flask web app to predict cloudbursts using historical rainfall data and meteorological patterns.}}
+    \resumeItem{\normalsize{Trained ML models with scikit-learn to classify weather events based on threshold analysis.}}
+    \resumeItem{\normalsize{Visualized real-time predictions and rainfall intensity using dynamic graphs on frontend.}}
+    \resumeItem{\normalsize{Tested accuracy of models and improved performance using data cleaning and feature selection.}}
+  \resumeItemListEnd
+  \vspace{8pt}
+
+  
+  \resumeSubheading
+  {Peer-to-Peer Skill Exchange Platform \href{https://github.com/yourgithub/skill-swap}{\color{blue}{Link}}}{} 
+  {Tech Stack: React.js, Node.js, Express.js, MongoDB, JWT, Tailwind CSS}{}
+  \resumeItemListStart
+    \resumeItem{\normalsize{Built a platform where users exchange skills (e.g., teach design to learn coding) with verified time-based transactions.}}
+    \resumeItem{\normalsize{Implemented secure JWT-based authentication and real-time messaging using WebSockets.}}
+    \resumeItem{\normalsize{Integrated a points-based system to match users based on available hours and requested skills.}}
+    \resumeItem{\normalsize{Designed a responsive and intuitive interface using React and Tailwind CSS.}}
+  \resumeItemListEnd
+  \vspace{8pt}
+  \resumeSubheading
+  {Virtual Event Ticketing and QR Check-in System \href{https://github.com/yourgithub/event-ticket-app}{\color{blue}{Link}}}{} 
+  {Tech Stack: Node.js, Express, MongoDB, React.js, QR Code API, Bootstrap}{}
+  \resumeItemListStart
+    \resumeItem{\normalsize{Developed an event hosting and ticket booking web app with digital QR tickets sent via email.}}
+    \resumeItem{\normalsize{Admins can create/manage events, view bookings, and scan tickets with a QR scanner interface.}}
+    \resumeItem{\normalsize{Added QR-based check-in system and real-time validation of scanned entries.}}
+    \resumeItem{\normalsize{Used MongoDB to manage event listings, ticket status, and user info securely.}}
+  \resumeItemListEnd
+  \vspace{8pt}
+
+    
+  \resumeSubHeadingListEnd
+
+
+\vspace{-12pt}
+
+
+ %-----------PROJECTS-----------
+
+%
+
+%-----------Publications---------------
+% \section{\color{airforceblue}PUBLICATIONS}
+    
+%   \resumeItemListStart
+%     \resumeItem{\normalsize{Add Publication details here}}\href{[url link to publication]}{\color{blue}\underline{Link}}
+%     \vspace{-5pt}
+    
+%     \resumeItem{\normalsize{Add Publication details here}}\href{[url link to publication]}{\color{blue}\underline{Link}}
+%     \vspace{-5pt}
+
+%     % copy and paste above resumeItem block to add more 
+    
+%   \resumeItemListEnd 
+      
+% \vspace{-8pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{airforceblue}ACHIEVEMENTS}
+
+  \resumeItemListStart
+  \resumeItem{\normalsize{\textbf{\href{https://leetcode.com/u/xx/}{Leetcode}} } {Solved XXXX+ Questions }}
+  \vspace{-5pt}
+
+  \resumeItem{\normalsize{\textbf{\href{}{Leetcode}} } {Achieved a XXXXX+ contest rating }}
+  \vspace{-5pt}
+  
+  \resumeItem{\normalsize{\textbf{\href{}{XXXXXXXXX}} } {xxxxxxxxxxx xxxx xxxxxxx xxxxx xxxx xxxxxxxxxxx xxxx xxx  xxxxxxxx  xxxxx  xxxx}}
+  \vspace{-5pt}
+  \resumeItem{\normalsize{\textbf{\href{}{XXXXXXXXX}} } {xxxxxxxxxxx xxxx xxxxxxx xxxxx xxxx xxxxxxxxxxx xxxx xxx  xxxxxxxx  xxxxx  xxxx}}
+  \vspace{-5pt}
+  \resumeItem{\normalsize{\textbf{\href{}{XXXXXXXXX}} } {xxxxxxxxxxx xxxx xxxxxxx xxxxx xxxx xxxxxxxxxxx xxxx xxx  xxxxxxxx  xxxxx  xxxx}}
+  \vspace{-5pt}
+  \resumeItem{\normalsize{\textbf{\href{}{XXXXXXXXX}} } {xxxxxxxxxxx xxxx xxxxxxx xxxxx xxxx xxxxxxxxxxx xxxx xxx  xxxxxxxx  xxxxx  xxxx}}
+  \vspace{-5pt}
+
+  \resumeItemListEnd
+
+      
+\vspace{-12pt}
+
+\end{document}
